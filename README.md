@@ -1,79 +1,51 @@
-# Merkle Tree Audit System & Cryptographic Verification
+# Advanced Cryptography & Defensive Security Portfolio
 
-A robust Python implementation of a Merkle Tree data integrity audit system built using SHA-256 cryptographic hashing. Designed for cryptographic verification, automated audit logging, and inclusion proof validation.
-
-## Repository Structure
-
+A high-fidelity, modular Python cybersecurity portfolio comprising integrity verification structures, ransomware early warning systems, and post-quantum lattice-based encryption algorithms.
+Repository Structure
 .
-├── WEEK1_MERKLE_TREE/
+├── WEEK1_MERKLE_TREE/              # Merkle Tree Integrity Verification
 │   ├── src/
-│   │   ├── init.py
-│   │   └── merkle_tree.py
 │   ├── tests/
-│   │   └── test_merkle.py
 │   ├── examples/
-│   │   └── demo_audit.py
-│   ├── docs/
-│   │   ├── architecture.md
-│   │   └── threat-model.md
-│   ├── assets/
-│   │   └── diagram.md
-│   └── results/
-│       └── audit_results.md
-├── requirements.txt
-└── README.md
-
-
-## Features
-- SHA-256 Hashing: Generates cryptographic leaf and internal node digests.
-- Logarithmic Proofs: Generates and verifies O(log N) audit proofs.
-- Tamper Detection: Instantly flags modified or corrupted log entries.
-- Balanced Binary Architecture: Automatically duplicates odd leaf nodes to maintain tree symmetry.
-
-## Quick Start
-
-1. Install dependencies:
-   pip install -r requirements.txt
-
-2. Run the audit demonstration:
-   python -m WEEK1_MERKLE_TREE.examples.demo_audit
-
-3. Run automated unit tests:
-   pytest WEEK1_MERKLE_TREE/tests/
-
-## Cryptographic Security Summary
-- Hash Standard: SHA-256 (2^256 security level against collision and preimage attacks)
-- Proof Time Complexity: O(log N) verification speed
-
-# Ransomware Early Warning Detection via Cryptographic Honeyfiles and Canary Traps
-
-A high-fidelity early warning system using decoy honeyfiles and cryptographic hash baseline comparisons to detect unauthorized ransomware encryption and file tampering.
-
-## Repository Structure
-
-```text
-WEEK2_RANSOMWARE_CANARY/
+│   └── docs/ & results/
+├── WEEK2_RANSOMWARE_CANARY/        # Ransomware Early Warning Canary Trap
+│   ├── src/
+│   ├── tests/
+│   ├── examples/
+│   └── docs/ & results/
+└── WEEK3_RLWE_ENCRYPTION/          # Ring Learning With Errors (RLWE) PQC
 ├── src/
-│   ├── __init__.py
-│   └── canary_monitor.py
 ├── tests/
-│   └── test_canary.py
 ├── examples/
-│   └── demo_ransomware_defense.py
-├── docs/
-│   ├── architecture.md
-│   └── threat-model.md
-├── assets/
-│   └── diagram.md
-├── results/
-│   ├── audit_results.md
-│   ├── canary_alert.json
-│   └── detection_workflow.png
-├── requirements.txt
-└── README.md
-Quick Start
-Run the demonstration:
-python -m WEEK2_RANSOMWARE_CANARY.examples.demo_ransomware_defense
+└── docs/ & results/
+Module Breakdown
+1. Merkle Tree Integrity Verification (Week 1)
+Objective: Implement a cryptographic binary Merkle tree structure using SHA-256 for efficient and tamper-evident data verification.
 
-Run automated unit tests:
-pytest WEEK2_RANSOMWARE_CANARY/tests/
+Key Features: Recursive node hashing, Merkle root computation, and cryptographic proof-of-inclusion generation.
+
+Execution: python -m WEEK1_MERKLE_TREE.examples.demo_merkle
+
+2. Ransomware Early Warning Canary Trap (Week 2)
+Objective: Deploy decoy honeyfiles combined with continuous cryptographic hash monitoring to detect unauthorized file tampering and ransomware encryption in real-time.
+
+Key Features: Baseline SHA-256 integrity checks, automated polling, and emergency JSON alert log dispatch upon anomaly detection.
+
+Execution: python -m WEEK2_RANSOMWARE_CANARY.examples.demo_ransomware_defense
+
+3. Ring Learning With Errors (RLWE) Encryption (Week 3)
+Objective: Implement a post-quantum public-key encryption scheme operating over the polynomial quotient ring Z_q[x] / (x^n + 1).
+
+Key Features: Discrete Gaussian noise sampling, polynomial multiplication and reduction modulo (x^n + 1), ciphertext generation, and threshold decoding.
+
+Execution: python -m WEEK3_RLWE_ENCRYPTION.examples.demo_rlwe_encryption
+
+Installation & Requirements
+Ensure Python 3.8+ and required dependencies are installed:
+
+pip install numpy pytest matplotlib
+
+Running Unit Tests
+Execute the complete test suite across all modules:
+
+pytest

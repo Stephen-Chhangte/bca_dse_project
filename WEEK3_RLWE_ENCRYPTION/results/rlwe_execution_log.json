@@ -1,0 +1,10 @@
+{
+  "parameters": {
+    "n": 256,
+    "q": 7681,
+    "std_dev": 3.0
+  },
+  "plaintext": "QUANTUM_SAFE",
+  "recovered_text": "QUANTUM_SAFE",
+  "status": "SUCCESS"
+}
