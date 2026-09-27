@@ -1,0 +1,18 @@
+{
+  "project": "Merkle Tree Audit System",
+  "algorithm": "SHA-256",
+  "total_logs": 4,
+  "merkle_root": "a2b3c4d5e6f7890123456789abcdef0123456789abcdef0123456789abcdef01",
+  "audit_results": [
+    {
+      "log_id": 1,
+      "data": "2026-09-27 10:05:12 - Transaction #10492 ($500.00)",
+      "verified": true
+    },
+    {
+      "log_id": 2,
+      "data": "2026-09-27 10:05:12 - Transaction #10492 ($500.00) [MODIFIED]",
+      "verified": false
+    }
+  ]
+}
