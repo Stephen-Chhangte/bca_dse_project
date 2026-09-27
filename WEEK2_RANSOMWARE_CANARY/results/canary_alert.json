@@ -1,0 +1,8 @@
+{
+  "status": "ALERT",
+  "event": "RANSOMWARE_ENCRYPTION_DETECTED",
+  "file": "WEEK2_RANSOMWARE_CANARY/results/passwords_decoy.xlsx",
+  "baseline_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "tampered_hash": "8d969eef6ecad3c29a3a629280e686cf0c3f5d5a86aff3ca12020c923adc6c92",
+  "timestamp": "2026-09-27 20:25:00"
+}
